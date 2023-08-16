@@ -1,20 +1,23 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
-interface BoxProps{
-    children: React.ReactNode;
-    className?: string;
+interface BoxProps {
+  children: React.ReactNode;
+  className?: string;
 }
 
-const Box: React.FC<BoxProps> = ({
-    children,
-    className
-}) => {
-    
+const Box: React.FC<BoxProps> = ({ children, className }) => {
   return (
-    <div>
+    <div
+      className={twMerge(`
+    bg-neutral-900
+    rounded-lg
+    w-full
+    `)}
+    >
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default Box
+export default Box;
