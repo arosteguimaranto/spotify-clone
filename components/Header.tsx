@@ -131,21 +131,10 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
             </div>
           </>
 
-          {/*    <div className="flex gap-x-4 items-center">
-              <Button 
-               className="bg-white px-6 py-2"
-              >
-                Sign Up
-              </Button>
-              <Button 
-                
-                className="bg-white"
-              >
-               
-              </Button>
-            </div> */}
+          
         </div>
       </div>
+      {children}
     </div>
   );
 };
