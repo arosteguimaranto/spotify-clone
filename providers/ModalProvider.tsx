@@ -1,31 +1,31 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-
-
+import Modal from "@/components/Modal";
+import { useEffect, useState } from "react";
 
 const ModalProvider = () => {
-    const [isMounted, setIsMounted] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-    useEffect(() => {
-      setIsMounted(true);
-    
-    }, []);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-    if(!isMounted){
-        return null;
-    }
+  if (!isMounted) {
+    return null;
+  }
 
-
-
-    
   return (
-    <div>
-      <>
-      Modals
-      </>
-    </div>
-  )
-}
+    <>
+      <Modal
+        title="Test Modal"
+        description="Test Description"
+        isOpen
+        onChange={() => {}}
+      >
+        Test Children
+      </Modal>
+    </>
+  );
+};
 
-export default ModalProvider
+export default ModalProvider;
