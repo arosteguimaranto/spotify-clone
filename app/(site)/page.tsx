@@ -50,8 +50,7 @@ export default async function Home() {
           <h1 className=" text-white text-2xl font-semibold">Newest songs</h1>
         </div>
         <PageContent songs={songs}/>
-        <div>{songs.map((song) => <div> {song.title}</div>)}
-        </div>
+        
       </div>
     </div>
   );
