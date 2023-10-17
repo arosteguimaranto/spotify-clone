@@ -8,7 +8,7 @@ import { Auth } from "@supabase/auth-ui-react";
 import { ThemeSupa } from "@supabase/auth-ui-shared";
 import {useEffect} from 'react'
 
-import useAuthModal from "@/hooks/useAuthModel";
+import useAuthModal from "@/hooks/useAuthModal";
 
 const AuthModal = () => {
   const supabaseClient = useSupabaseClient();
